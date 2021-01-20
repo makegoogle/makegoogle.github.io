@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MakeGoogle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/twbs/bootstrap@4.3/dist/css/bootstrap.css'><link rel="stylesheet" href="./style.css">
+<link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
+</head>
+<style>
+body{
+	background: linear-gradient(to right, #18abf0, #f008be);
+  
+	}
+</style>
+<body>
+    
+
+<!-- partial:index.partial.html -->
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <h3 class="text-center font-weight-bold mb-4" >
+                  <body>
+                    <style>
+                      @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+  padding: 40px;
+  background-color: #c13b17;  
+}
+
+p {
+  border-right: solid 5px rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+p {
+  animation: animated-text 4s linear 1s 1 normal both,
+             animated-cursor 600ms linear infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 450px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+                    </style>
+                  <p><img src="img//74zF.gif" alt="img" style="width: 10%;height: 10%;" ><br>Google Do It</p>
+                  </body>
+                    
+                </h3>
+                <div class="form-group">
+                    <form method="get" action="http://www.google.com/search">
+
+                    <input autocomplete="off" id="search" name="q" type="text" maxlength="223" value=""
+                        placeholder="   Search anything here..." style="width: 42ex;border-radius: 2rem; border-color: rgb(241, 24, 151);"><br><br>
+                        <input type="submit" value=" Google Search" style="background-color: rgb(181, 231, 240); border-color: rgb(235, 17, 137); border-radius: 10rem;"/>
+                    </form> 
+                </div>
+               
+                <div id="match-list"></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="footer text-center w-100" style="padding: 10%;" >
+        
+        <img src="img//youtube.png" alt="img" height="60pm" width="60pm"  >
+        <img src="img//GoogleCalendar.svg.png" alt="img" height="40pm" width="40pm">
+        <img src="img//gmail.png" alt="img" height="40pm" width="40pm">
+        <img src="img//googletranslator.png" alt="img" height="40pm" width="40pm">
+        <img src="img//Gphotos.png " alt="img" height="40pm" width="40pm">
+    </div>
+
+    <a href="pass.html" style="padding: 0% 40%;color: white;">Tap here for LOGIN</a>
+    
+
+    <script>
+        document.onkeydown = function(e) {
+          if(event.keyCode == 123) {
+            console.log('You cannot inspect Element');
+             return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+        } 
+        // prevents right clicking
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        </script>
+
+  
+</body>
+</html>
